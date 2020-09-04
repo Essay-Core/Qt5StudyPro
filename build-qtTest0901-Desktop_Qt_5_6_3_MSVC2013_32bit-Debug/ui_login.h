@@ -14,12 +14,10 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -30,8 +28,6 @@ public:
     QLabel *label_2;
     QPushButton *loginBtn;
     QPushButton *addinBtn;
-    QWidget *layoutWidget;
-    QHBoxLayout *horizontalLayout;
     QLabel *label;
     QLineEdit *line_account;
 
@@ -40,36 +36,27 @@ public:
         if (Login->objectName().isEmpty())
             Login->setObjectName(QStringLiteral("Login"));
         Login->resize(374, 181);
+        Login->setStyleSheet(QStringLiteral(""));
         line_password = new QLineEdit(Login);
         line_password->setObjectName(QStringLiteral("line_password"));
-        line_password->setGeometry(QRect(139, 70, 133, 20));
+        line_password->setGeometry(QRect(140, 70, 131, 20));
         label_2 = new QLabel(Login);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(100, 70, 24, 16));
+        label_2->setGeometry(QRect(100, 70, 31, 16));
         label_2->setLayoutDirection(Qt::LeftToRight);
         loginBtn = new QPushButton(Login);
         loginBtn->setObjectName(QStringLiteral("loginBtn"));
-        loginBtn->setGeometry(QRect(99, 109, 75, 23));
+        loginBtn->setGeometry(QRect(99, 109, 75, 27));
         addinBtn = new QPushButton(Login);
         addinBtn->setObjectName(QStringLiteral("addinBtn"));
-        addinBtn->setGeometry(QRect(189, 109, 75, 23));
-        layoutWidget = new QWidget(Login);
-        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(99, 39, 177, 22));
-        horizontalLayout = new QHBoxLayout(layoutWidget);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(layoutWidget);
+        addinBtn->setGeometry(QRect(189, 109, 75, 27));
+        label = new QLabel(Login);
         label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(90, 40, 39, 16));
         label->setLayoutDirection(Qt::RightToLeft);
-
-        horizontalLayout->addWidget(label);
-
-        line_account = new QLineEdit(layoutWidget);
+        line_account = new QLineEdit(Login);
         line_account->setObjectName(QStringLiteral("line_account"));
-
-        horizontalLayout->addWidget(line_account);
-
+        line_account->setGeometry(QRect(140, 40, 130, 20));
 
         retranslateUi(Login);
 

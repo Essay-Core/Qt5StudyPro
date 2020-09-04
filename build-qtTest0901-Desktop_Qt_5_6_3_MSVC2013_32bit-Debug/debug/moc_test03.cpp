@@ -1,16 +1,16 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'login.h'
+** Meta object code from reading C++ file 'test03.h'
 **
 ** Created by: The Qt Meta Object Compiler version 67 (Qt 5.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../qtTest0901/login.h"
+#include "../../qtTest0901/test03.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'login.h' doesn't include <QObject>."
+#error "The header file 'test03.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
 #error "This file was generated using the moc from 5.6.3. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -18,29 +18,28 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_Login_t {
+struct qt_meta_stringdata_test03_t {
     QByteArrayData data[4];
-    char stringdata0[47];
+    char stringdata0[46];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Login_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_test03_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_Login_t qt_meta_stringdata_Login = {
+static const qt_meta_stringdata_test03_t qt_meta_stringdata_test03 = {
     {
-QT_MOC_LITERAL(0, 0, 5), // "Login"
-QT_MOC_LITERAL(1, 6, 19), // "on_loginBtn_clicked"
-QT_MOC_LITERAL(2, 26, 0), // ""
-QT_MOC_LITERAL(3, 27, 19) // "on_addinBtn_clicked"
+QT_MOC_LITERAL(0, 0, 6), // "test03"
+QT_MOC_LITERAL(1, 7, 17), // "on_addBtn_clicked"
+QT_MOC_LITERAL(2, 25, 0), // ""
+QT_MOC_LITERAL(3, 26, 19) // "on_clearBtn_clicked"
 
     },
-    "Login\0on_loginBtn_clicked\0\0"
-    "on_addinBtn_clicked"
+    "test03\0on_addBtn_clicked\0\0on_clearBtn_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_Login[] = {
+static const uint qt_meta_data_test03[] = {
 
  // content:
        7,       // revision
@@ -64,40 +63,40 @@ static const uint qt_meta_data_Login[] = {
        0        // eod
 };
 
-void Login::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void test03::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        Login *_t = static_cast<Login *>(_o);
+        test03 *_t = static_cast<test03 *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_loginBtn_clicked(); break;
-        case 1: _t->on_addinBtn_clicked(); break;
+        case 0: _t->on_addBtn_clicked(); break;
+        case 1: _t->on_clearBtn_clicked(); break;
         default: ;
         }
     }
     Q_UNUSED(_a);
 }
 
-const QMetaObject Login::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_Login.data,
-      qt_meta_data_Login,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
+const QMetaObject test03::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_test03.data,
+      qt_meta_data_test03,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
-const QMetaObject *Login::metaObject() const
+const QMetaObject *test03::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Login::qt_metacast(const char *_clname)
+void *test03::qt_metacast(const char *_clname)
 {
     if (!_clname) return Q_NULLPTR;
-    if (!strcmp(_clname, qt_meta_stringdata_Login.stringdata0))
-        return static_cast<void*>(const_cast< Login*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_test03.stringdata0))
+        return static_cast<void*>(const_cast< test03*>(this));
     return QDialog::qt_metacast(_clname);
 }
 
-int Login::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int test03::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)

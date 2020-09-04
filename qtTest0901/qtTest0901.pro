@@ -15,10 +15,22 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    login.cpp
+    login.cpp \
+    testdialog.cpp \
+    test03.cpp \
+    test04.cpp
 
 HEADERS  += mainwindow.h \
-    login.h
+    login.h \
+    testdialog.h \
+    test03.h \
+    test04.h
 
 FORMS    += mainwindow.ui \
-    login.ui
+    login.ui \
+    testdialog.ui \
+    test03.ui \
+    test04.ui
+
+DISTFILES += \
+    StyleSheet.qss

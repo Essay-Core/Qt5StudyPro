@@ -2,6 +2,8 @@
 #define LOGIN_H
 
 #include <QDialog>
+#include <QString>
+
 
 namespace Ui {
 class Login;
@@ -15,9 +17,12 @@ class Login : public QDialog
 public:
     explicit Login(QWidget *parent = 0);
     ~Login();
+    void init();
 
 private slots:
     void on_loginBtn_clicked();
+
+    void on_addinBtn_clicked();
 
 private:
     Ui::Login *ui;

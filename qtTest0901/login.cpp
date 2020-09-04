@@ -8,12 +8,26 @@ Login::Login(QWidget *parent) :
     ui(new Ui::Login)
 {
     ui->setupUi(this);
-    ui->line_account->setFocus();//将光标移动到用户名框内
+    init();
+
 }
 
 Login::~Login()
 {
     delete ui;
+}
+
+void Login::init(){
+    //设置密码框显示模式
+    ui->line_password->setEchoMode(QLineEdit::PasswordEchoOnEdit);
+    //注意必须使用双引号才行
+    ui->line_account->setText("admin");
+    ui->line_password->setText("123456");
+    //1.多线程
+    //2.数据库
+    //3.设计模式
+    //4.c++11新特性等
+
 }
 
 void Login::on_loginBtn_clicked()
@@ -30,4 +44,10 @@ void Login::on_loginBtn_clicked()
         ui->line_password->clear();
         ui->line_account->setFocus();//将光标移动到用户名框内
     }
+}
+
+void Login::on_addinBtn_clicked()
+{
+    //发生信号切换页面
+    reject();
 }

@@ -13,12 +13,15 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QLineEdit" name="line_password">
    <property name="geometry">
     <rect>
-     <x>139</x>
+     <x>140</x>
      <y>70</y>
-     <width>133</width>
+     <width>131</width>
      <height>20</height>
     </rect>
    </property>
@@ -28,7 +31,7 @@
     <rect>
      <x>100</x>
      <y>70</y>
-     <width>24</width>
+     <width>31</width>
      <height>16</height>
     </rect>
    </property>
@@ -45,7 +48,7 @@
      <x>99</x>
      <y>109</y>
      <width>75</width>
-     <height>23</height>
+     <height>27</height>
     </rect>
    </property>
    <property name="text">
@@ -58,37 +61,38 @@
      <x>189</x>
      <y>109</y>
      <width>75</width>
-     <height>23</height>
+     <height>27</height>
     </rect>
    </property>
    <property name="text">
     <string>注册</string>
    </property>
   </widget>
-  <widget class="QWidget" name="layoutWidget">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>99</x>
-     <y>39</y>
-     <width>177</width>
-     <height>22</height>
+     <x>90</x>
+     <y>40</y>
+     <width>39</width>
+     <height>16</height>
     </rect>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="layoutDirection">
-       <enum>Qt::RightToLeft</enum>
-      </property>
-      <property name="text">
-       <string>用户名</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="line_account"/>
-    </item>
-   </layout>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>用户名</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_account">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>130</width>
+     <height>20</height>
+    </rect>
+   </property>
   </widget>
  </widget>
  <resources/>
